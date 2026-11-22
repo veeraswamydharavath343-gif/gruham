@@ -1,0 +1,62 @@
+{
+  "name": "Product",
+  "type": "object",
+  "properties": {
+    "name": {
+      "type": "string"
+    },
+    "category": {
+      "type": "string",
+      "enum": [
+        "cement",
+        "bricks",
+        "iron",
+        "sand",
+        "tiles",
+        "pipes",
+        "electrical",
+        "paint",
+        "wood",
+        "doors",
+        "bathroom",
+        "kitchen",
+        "beds",
+        "sofas",
+        "tables",
+        "wardrobes",
+        "dining"
+      ]
+    },
+    "price": {
+      "type": "number"
+    },
+    "unit": {
+      "type": "string"
+    },
+    "description": {
+      "type": "string"
+    },
+    "stock": {
+      "type": "number"
+    },
+    "location": {
+      "type": "string"
+    },
+    "image_url": {
+      "type": "string"
+    },
+    "shop_name": {
+      "type": "string"
+    },
+    "delivery": {
+      "type": "boolean",
+      "default": false
+    }
+  },
+  "required": [
+    "name",
+    "category",
+    "price",
+    "unit"
+  ]
+}

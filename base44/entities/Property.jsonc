@@ -1,0 +1,74 @@
+{
+  "name": "Property",
+  "type": "object",
+  "properties": {
+    "title": {
+      "type": "string"
+    },
+    "description": {
+      "type": "string"
+    },
+    "property_type": {
+      "type": "string",
+      "enum": [
+        "house",
+        "apartment",
+        "building",
+        "palace",
+        "commercial"
+      ]
+    },
+    "listing_type": {
+      "type": "string",
+      "enum": [
+        "rent",
+        "sale"
+      ]
+    },
+    "price": {
+      "type": "number"
+    },
+    "location": {
+      "type": "string"
+    },
+    "address": {
+      "type": "string"
+    },
+    "bedrooms": {
+      "type": "number"
+    },
+    "bathrooms": {
+      "type": "number"
+    },
+    "floors": {
+      "type": "number"
+    },
+    "area": {
+      "type": "number"
+    },
+    "image_url": {
+      "type": "string"
+    },
+    "owner_name": {
+      "type": "string"
+    },
+    "owner_phone": {
+      "type": "string"
+    },
+    "availability": {
+      "type": "boolean",
+      "default": true
+    },
+    "featured": {
+      "type": "boolean",
+      "default": false
+    }
+  },
+  "required": [
+    "title",
+    "property_type",
+    "listing_type",
+    "price",
+    "location"
+  ]
+}

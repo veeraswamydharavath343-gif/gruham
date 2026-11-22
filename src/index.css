@@ -1,0 +1,68 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 48 24% 96%;
+    --foreground: 216 12% 8%;
+    --card: 0 0% 100%;
+    --card-foreground: 216 12% 8%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 216 12% 8%;
+    --primary: 216 12% 8%;
+    --primary-foreground: 0 0% 98%;
+    --secondary: 45 13% 88%;
+    --secondary-foreground: 216 12% 8%;
+    --muted: 45 13% 92%;
+    --muted-foreground: 213 8% 42%;
+    --accent: 13 67% 53%;
+    --accent-foreground: 0 0% 100%;
+    --destructive: 0 72% 51%;
+    --destructive-foreground: 0 0% 100%;
+    --border: 45 13% 88%;
+    --input: 45 13% 88%;
+    --ring: 13 67% 53%;
+    --radius: 0.75rem;
+    --font-heading: "Plus Jakarta Sans", ui-sans-serif, system-ui, sans-serif;
+    --font-body: "Inter", ui-sans-serif, system-ui, sans-serif;
+    --font-display: "Plus Jakarta Sans", ui-sans-serif, system-ui, sans-serif;
+    --font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+    --module-property: 216 56% 23%;
+    --module-design: 258 84% 58%;
+    --module-workers: 160 94% 30%;
+    --module-materials: 32 95% 44%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border outline-ring/50;
+  }
+
+  body {
+    @apply bg-background text-foreground font-body;
+  }
+}
+
+@layer utilities {
+  .font-heading {
+    font-family: var(--font-heading);
+  }
+  .font-display {
+    font-family: var(--font-display);
+  }
+  .no-scrollbar::-webkit-scrollbar {
+    display: none;
+  }
+  .no-scrollbar {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+  .snap-x-mandatory {
+    scroll-snap-type: x mandatory;
+  }
+  .snap-start {
+    scroll-snap-align: start;
+  }
+}

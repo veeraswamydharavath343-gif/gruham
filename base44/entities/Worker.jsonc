@@ -1,0 +1,67 @@
+{
+  "name": "Worker",
+  "type": "object",
+  "properties": {
+    "name": {
+      "type": "string"
+    },
+    "profession": {
+      "type": "string",
+      "enum": [
+        "plumber",
+        "painter",
+        "cleaner",
+        "carpenter",
+        "head_carpenter",
+        "electrician",
+        "mason",
+        "tile_worker",
+        "welder",
+        "construction_worker",
+        "interior_designer",
+        "architect"
+      ]
+    },
+    "experience": {
+      "type": "number"
+    },
+    "location": {
+      "type": "string"
+    },
+    "working_area": {
+      "type": "string"
+    },
+    "description": {
+      "type": "string"
+    },
+    "services": {
+      "type": "string"
+    },
+    "availability": {
+      "type": "boolean",
+      "default": true
+    },
+    "photo_url": {
+      "type": "string"
+    },
+    "phone": {
+      "type": "string"
+    },
+    "rating": {
+      "type": "number",
+      "default": 4.5
+    },
+    "work_photos": {
+      "type": "string"
+    },
+    "verified": {
+      "type": "boolean",
+      "default": false
+    }
+  },
+  "required": [
+    "name",
+    "profession",
+    "location"
+  ]
+}

@@ -1,0 +1,42 @@
+{
+  "name": "Shop",
+  "type": "object",
+  "properties": {
+    "shop_name": {
+      "type": "string"
+    },
+    "owner_name": {
+      "type": "string"
+    },
+    "location": {
+      "type": "string"
+    },
+    "address": {
+      "type": "string"
+    },
+    "phone": {
+      "type": "string"
+    },
+    "description": {
+      "type": "string"
+    },
+    "opening_hours": {
+      "type": "string"
+    },
+    "logo_url": {
+      "type": "string"
+    },
+    "delivery": {
+      "type": "boolean",
+      "default": false
+    },
+    "verified": {
+      "type": "boolean",
+      "default": false
+    }
+  },
+  "required": [
+    "shop_name",
+    "location"
+  ]
+}
